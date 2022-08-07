@@ -1,0 +1,69 @@
+// normlize
+html,
+body {
+  font-size: 18px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Eina02';
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  padding-bottom: 30px;
+  
+}
+
+//font size
+
+p {
+  font-size: 0.825rem;
+  opacity: .5;
+  font-weight: 600;
+}
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+//typography 
+
+@font-face {
+  font-family: Eina02;
+  src: url("../font/Eina02-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Eina02;
+  src: url("../font/Eina02-Light.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Eina02;
+  src: url("../font/Eina02-Regular.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Eina02;
+  src: url("../font/Eina02-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
