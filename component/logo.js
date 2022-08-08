@@ -3,10 +3,8 @@ import styles from "../styles/logo.module.scss";
 
 const jump = {
     initial: { 
-
     },
     whileHover: {
-
         transition : {
             yoyo: Infinity,
             whene: "beforeChildren",
@@ -21,12 +19,11 @@ const jumpchild = {
         y:0
     },
     whileHover: {
-        y:-20,
+        y:-15,
         transition : {
             yoyo: Infinity,
             type: 'tween',
-            whene: "beforeChildren",
-            staggerChildren: 0.5
+            staggerChildren: 200
         }
     },
 
@@ -43,9 +40,7 @@ export default function Logo() {
             whileHover="whileHover" 
     >
         {splited.map((splited) => ( 
-            <motion.span   
-                variants={jumpchild}
-            >
+            <motion.span variants={jumpchild} >
                 {splited}
             </motion.span>
         ))}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "../styles/project.module.scss";
 
 //aray of projects

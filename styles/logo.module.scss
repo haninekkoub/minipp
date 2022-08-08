@@ -2,6 +2,7 @@
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     cursor: pointer;
+    z-index: 90;
     
     &:hover {
         -webkit-box-reflect: below 0 linear-gradient(transparent, white);
