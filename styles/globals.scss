@@ -1,3 +1,16 @@
+// brake point 
+@mixin media-query($size) {
+  @if $size == desktop {
+      @media screen and (min-width:769px) {
+          @content; 
+      }
+  }
+  @else if $size == mobile {
+      @media screen and (max-width:768px) {
+          @content; 
+      }
+  }
+}
 
 // normlize
 html,
@@ -38,14 +51,24 @@ p {
   font-size: 0.825rem;
   opacity: .5;
   font-weight: 600;
+  @include media-query(mobile) {
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
 }
 h5 {
   font-size: 1rem;
   font-weight: 700;
+  @include media-query(mobile) {
+    font-size: 0.825rem;
+  }
 }
 h1 {
   font-size: 1.25rem;
   font-weight: 700;
+  @include media-query(mobile) {
+    font-size: 1rem;
+  }
 }
 
 //typography 
@@ -70,3 +93,4 @@ h1 {
   src: url("../font/Eina02-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
+

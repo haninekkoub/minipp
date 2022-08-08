@@ -14,6 +14,7 @@ const hand = {
             stiffness: 400,
         }
     },
+
 }
 
 const wind = {
