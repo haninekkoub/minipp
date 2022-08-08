@@ -1,3 +1,5 @@
+@import "mixin.scss";
+
 .container {
     position: absolute;
     top: 0;
@@ -10,6 +12,10 @@
     width: 100vw;
     backdrop-filter: blur(5px);
     z-index: 10;
+    @include media-query(mobile) {
+      flex-direction: column;
+      padding-top: 80px;
+    }
 }
 .menuLeft{
   position: relative;
@@ -22,6 +28,10 @@
   background: -webkit-linear-gradient(180deg, rgba(194,206,208,1) 0%, rgba(255,255,255,1) 100%);
   background: linear-gradient(180deg, rgba(194,206,208,1) 0%, rgba(255,255,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c2ced0",endColorstr="#ffffff",GradientType=1);
+  @include media-query(mobile) {
+    width: 80vw;
+    height: 40vh;
+  }
   .title {
     position: absolute;
     right: 0;
@@ -30,7 +40,9 @@
     font-weight: bold;
     opacity: .2;
     line-height: 82%;
-
+    @include media-query(mobile) {
+      font-size: 4rem;
+    }
   }
   .description {
     height: 100%;
@@ -41,6 +53,9 @@
     align-items: center;
     padding: 20px 3vw;
     gap: 20px;
+    @include media-query(mobile) {
+      padding: 10vw;
+    }
     h5 {
       font-size: 1.3rem;
     }
@@ -57,6 +72,10 @@
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(194,206,208,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#c2ced0",GradientType=1);
   position: relative;
+  @include media-query(mobile) {
+    width: 80vw;
+    height: 40vh;
+  }
   .title {
     position: absolute;
     right: 0;
@@ -65,6 +84,10 @@
     font-weight: bold;
     opacity: .2;
     line-height: 82%;
+    @include media-query(mobile) {
+      font-size: 4rem;
+      bottom: 0;
+    }
   }
   .description {
     height: 100%;
@@ -75,17 +98,24 @@
     align-items: center;
     padding: 0 3vw;
     gap: 30px;
+    @include media-query(mobile) {
+      padding: 10vw;
+    }
+
   }
 }
 .cta{
     padding: 10px 20px;
     font-size: 1.25rem;
     border: 1px solid black;
-    position: relative;
     box-shadow: 6px 6px 0px black;
     &:hover {
       box-shadow: 0px 0px 0px black;
       transform: translate3D( 6px, 6px, 0);
       transition: all 100ms ease-in-out;
+    }
+    @include media-query(mobile) {
+      font-size: 1rem;
+      padding: 5px 10px;
     }
 } 

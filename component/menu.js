@@ -44,7 +44,7 @@ export default function Menu() {
   return (
     <div className={styles.container}>
       <AnimatePresence  >
-        <motion.div className={styles.menuLeft} variants={fadeup} initial="initial"  animate="animate">
+        <motion.div className={styles.menuLeft} variants={fadedown} initial="initial"  animate="animate">
             <motion.h2 className={styles.title} variants={text}>
                 About
             </motion.h2>
@@ -59,7 +59,7 @@ export default function Menu() {
             </div>
         </motion.div>
 
-        <motion.div className={styles.menuRight} variants={fadedown} initial="initial"  animate="animate">
+        <motion.div className={styles.menuRight} variants={fadeup} initial="initial"  animate="animate">
             <motion.h2 className={styles.title} variants={text} >
                 Contact
             </motion.h2>
