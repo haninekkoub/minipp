@@ -1,7 +1,7 @@
-import React, {useState , useEffect, useRef} from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
-
+import Hellos from "./hello"
+import Logo from "./logo"
 const  Container = styled.div`
   height: 50px;
   width: 100%;
@@ -11,14 +11,11 @@ const  Container = styled.div`
   gap: 50px;
   padding: 50px;
 `
-const  Logo = styled.div`
-  height: 30px; 
-  width: 150px;
-  background-color: cyan;
+
+const  Hamberger = styled.div`
   z-index: 90;
-`
-const  Hamberger = styled.button`
-  z-index: 90;
+  cursor: pointer;
+
 `
 const  Menu = styled.div`
   position: absolute;
@@ -102,17 +99,12 @@ const  MenuRight = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 3vw;
-    gap: 20px;
-  }
-  .rs {
-    height: 80px;
-    width: 100%;
-    background-color: blue;
+    gap: 30px;
   }
   `
   const  Cta = styled.button`
-    padding: 14px 30px;
-    font-size: 1.3rem;
+    padding: 10px 20px;
+    font-size: 1.25rem;
     border: 1px solid black;
     position: relative;
     box-shadow: 6px 6px 0px black;
@@ -124,13 +116,14 @@ const  MenuRight = styled.div`
   `
 export default function Header() {
   const [nav, showNav] = useState(true)
-
+  
   return (
     <Container>
-        <Logo />   
-        <Hamberger nav={nav} onClick={() => showNav(!nav)}  >
-          button
-        </Hamberger>  
+         <Logo />    
+        <Hamberger  nav={nav} onClick={() => showNav(!nav)} >
+          <Hellos />
+        </Hamberger>            
+        {nav &&    
         <Menu nav={nav}>
           <MenuLeft nav={nav}>
             <h2 className='title'>
@@ -138,13 +131,14 @@ export default function Header() {
             </h2>
             <div className='description'>
               <h5>
-                front end devloper
+                Front End Devloper
               </h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, amet ornare placerat tellus, amet lectus leo a quam. Egestas malesuada sagittis mattis quisque facilisis arcu ac.
                 Malesuada congue in cursus tortor. Egestas venenatis ipsum nunc ut tristique libero sit. Feugiat habitant amet malesuada fusce risus.
               </p>
             </div>
+
           </MenuLeft>
           <MenuRight nav={nav}>
             <h2 className='title'>
@@ -157,12 +151,10 @@ export default function Header() {
               <Cta>
                 Say Hello
               </Cta>
-              <div className='rs'>
-
-              </div>
             </div>
           </MenuRight>
         </Menu>
+      }
 
     </Container>
   )

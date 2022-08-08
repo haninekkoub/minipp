@@ -1,3 +1,4 @@
+
 // normlize
 html,
 body {
@@ -7,6 +8,7 @@ body {
   overflow-x: hidden;
   font-family: 'Eina02';
   position: relative;
+  
 }
 
 a {
@@ -30,6 +32,7 @@ a {
 }
 
 //font size
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 p {
   font-size: 0.825rem;
@@ -40,8 +43,8 @@ h5 {
   font-size: 1rem;
   font-weight: 700;
 }
-h4 {
-  font-size: 1.5rem;
+h1 {
+  font-size: 1.25rem;
   font-weight: 700;
 }
 

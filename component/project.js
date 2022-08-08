@@ -48,7 +48,7 @@ export default function Project() {
       {projects.map((project, i) => (
         <div key={i} className={styles.container}>
           <div className={styles.description}>
-            <h4>{project.title}</h4>
+            <h1>{project.title}</h1>
             <p>{project.date}</p>
             <p>{project.hero}</p>
             <div className={styles.tech}>
