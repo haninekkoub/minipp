@@ -1,16 +1,4 @@
-// brake point 
-@mixin media-query($size) {
-  @if $size == desktop {
-      @media screen and (min-width:769px) {
-          @content; 
-      }
-  }
-  @else if $size == mobile {
-      @media screen and (max-width:768px) {
-          @content; 
-      }
-  }
-}
+@import "mixin.scss";
 
 // normlize
 html,
