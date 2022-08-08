@@ -3,38 +3,51 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const fadeup = {
     initial: { 
-        y:  '150%', 
+        y: 300, 
         opacity: 0 
     },
     animate: {
-        y: 0 ,
-        opacity: 1,
-        transition : {
-            duration: 1,
-            type: 'spring',
-            stiffness: -200,
-
-        }
-    },
-    exit : {
-        y:  '150%', 
-        opacity: 0 
+        y: 0, 
+        opacity: 1 ,
+        transition: {
+            duration: 0.2,
+            when: "beforeChildren",
+            staggerChildren: 0.8,
+          },
     }
 }
+const fadedown = {
+    initial: { 
+        y: -300, 
+        opacity: 0 
+    },
+    animate: {
+        y: 0, 
+        opacity: 1 ,
+        transition: {
+            duration: 0.2,
+            when: "beforeChildren",
+            staggerChildren: 0.5,
+          },
+    }
+}
+const text = {
+    initial : {
+        x: 300,
 
+    },
+    animate: {
+        x: 0,    
+    }
+}
 export default function Menu() {
   return (
     <div className={styles.container}>
-        <AnimatePresence>
-        <motion.div className={styles.menuLeft}
-            variants={fadeup}
-            initial="initial"
-            animate="animate"
-            exit= "exit"
-        >
-            <h2 className={styles.title}>
+      <AnimatePresence  >
+        <motion.div className={styles.menuLeft} variants={fadeup} initial="initial"  animate="animate">
+            <motion.h2 className={styles.title} variants={text}>
                 About
-            </h2>
+            </motion.h2>
             <div className={styles.description}>
                 <h5>
                     Front End Devloper
@@ -46,10 +59,10 @@ export default function Menu() {
             </div>
         </motion.div>
 
-        <motion.div className={styles.menuRight}>
-            <h2 className={styles.title}>
+        <motion.div className={styles.menuRight} variants={fadedown} initial="initial"  animate="animate">
+            <motion.h2 className={styles.title} variants={text} >
                 Contact
-            </h2>
+            </motion.h2>
             <div className={styles.description}>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra ac eu nec ut at nibh vestibulum.
@@ -59,7 +72,7 @@ export default function Menu() {
                 </div>
             </div>
         </motion.div>
-        </AnimatePresence>
+      </AnimatePresence>
     </div>
   )
 }
