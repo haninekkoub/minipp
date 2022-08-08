@@ -21,7 +21,7 @@ const  Hamberger = styled.div`
 `
 
 export default function Header() {
-  const [nav, showNav] = useState(true)
+  const [nav, showNav] = useState(false)
   
   return (
     <Container>
