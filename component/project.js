@@ -1,43 +1,43 @@
 import styles from "../styles/project.module.scss";
-
+import Image from 'next/image'
+import Qualdon from '../assets/qualdon.png'
 //aray of projects
 
 const projects = [
   {
-    title: "Project Title 1",
+    title: "Qualdon",
     date: "March 9,2022",
     hero: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, diam sed nisi,",
     tech: [ 
         "scss",
         "nextjs",
-        "react",
+        
     ],
-    image: "https://source.unsplash.com/random",
+  //  image:  "Qualdon",
   },
-
   {
-    title: "Project Title 2",
-    date: "March 7,2022",
+    title: "Qualdon",
+    date: "March 9,2022",
     hero: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, diam sed nisi,",
     tech: [ 
         "scss",
         "nextjs",
+        
     ],
-
-    image: "https://source.unsplash.com/random",
+  //  image:  "Qualdon",
   },
-  
   {
-    title: "Project Title 2",
-    date: "March 7,2022",
+    title: "Qualdon",
+    date: "March 9,2022",
     hero: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, diam sed nisi,",
     tech: [ 
         "scss",
         "nextjs",
+        
     ],
-
-    image: "https://source.unsplash.com/random",
+  //  image:  "Qualdon",
   },
+
 
 ];
 
@@ -65,7 +65,12 @@ export default function Project() {
               </ul>
             </div>
           </div>
-          <img className={styles.image} src={project.image} alt="Picture of project" />
+          <Image
+              src={Qualdon}
+              alt="project picture"
+              placeholder="blur"
+              lassName={styles.image}
+          />
         </div>
       ))}
     </>
