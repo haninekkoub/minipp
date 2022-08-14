@@ -107,8 +107,8 @@ export default function Menu() {
             </motion.h2>
             <motion.div className={styles.description}variants={textfade}>
                 <motion.div  className={styles.herotitle} >
-                    <motion.h4 variants={wordfade}>About</motion.h4>
-                    <motion.h4 variants={wordfade}>me.</motion.h4> 
+                    <motion.h3 variants={wordfade}>About</motion.h3>
+                    <motion.h3 variants={wordfade}>me.</motion.h3> 
                 </motion.div>
                 <motion.div className={styles.hidden}>
                     <motion.h6 variants={wordfade}> Interactive Front-end Developer</motion.h6>
@@ -126,8 +126,8 @@ export default function Menu() {
             </motion.h2>
             <motion.div className={styles.description}>
                 <motion.div  className={styles.herotitle} >
-                    <motion.h4 variants={wordfade}>Let's</motion.h4>
-                    <motion.h4 variants={wordfade}>Talk.</motion.h4> 
+                    <motion.h3 variants={wordfade}>Let's</motion.h3>
+                    <motion.h3 variants={wordfade}>Talk.</motion.h3> 
                 </motion.div>
                 <motion.p variants={paragraph}>
                     New projects, freelance inquiry,  

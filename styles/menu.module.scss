@@ -1,15 +1,15 @@
 @import "mixin.scss";
 
 .container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
     width: 100vw;
+    overflow: hidden;
     backdrop-filter: blur(5px);
     z-index: 10;
     @include media-query(mobile) {
@@ -17,11 +17,11 @@
     }
 }
 .menuLeft{
+  margin-top: 25px;
   position: relative;
   overflow: hidden;
   height: 80vh;
   width: 40vw;
-  background-color: green;
   z-index: 100;
   transition: all 600ms;
   background: rgb(194,206,208);
@@ -31,18 +31,20 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c2ced0",endColorstr="#ffffff",GradientType=1);
   @include media-query(mobile) {
     width: 80vw;
-    height: 40vh;
+    height: 45vh;
+    margin-top: 58px;
   }
   .title {
     position: absolute;
-    right: 0;
+    right: -5%;
     bottom: 0;
-    font-size: 8rem;
+    font-size: 11rem;
     font-weight: bold;
-    opacity: .1;
+    opacity: .07;
     line-height: 90%;
     @include media-query(mobile) {
       font-size: 4rem;
+      right: 3%;
     }
   }
   .description {
@@ -52,14 +54,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px;
+    padding: 75px;
     @include media-query(mobile) {
-      padding: 10vw;
+      padding: 8vw;
     }
   }
 }
 .menuRight{
-    z-index: 100;
+  margin-top: 25px;
+  z-index: 100;
   position: relative;
   overflow: hidden;
   height: 80vh;
@@ -73,19 +76,20 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#c2ced0",GradientType=1);
   @include media-query(mobile) {
     width: 80vw;
-    height: 40vh;
+    height: 45vh;
+    margin-top: 0;
   }
   .title {
     position: absolute;
-    right: 0;
+    right: -20%;
     top: 0;
-    font-size: 7.5rem;
+    font-size: 10rem;
     font-weight: bold;
-    opacity: .1;
+    opacity: .07;
     line-height: 90%;
     @include media-query(mobile) {
       font-size: 4rem;
-      bottom: 0;
+      right: 1%;
     }
   }
   .description {
@@ -95,10 +99,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px;
+    padding: 75px;
     gap: 10px;
     @include media-query(mobile) {
-      padding: 10vw;
+      padding: 8vw;
     }
 
 

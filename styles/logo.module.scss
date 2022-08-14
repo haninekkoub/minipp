@@ -1,15 +1,20 @@
+@import "mixin.scss";
 .container {
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
-
     cursor: pointer;
     z-index: 90;
-    
+    color: black;
+    mix-blend-mode: darken;
+
     &:hover {
         -webkit-box-reflect: below 0 linear-gradient(transparent, white);
         
     }
     span:hover {
         opacity : 0.2;
+    }
+    @include media-query(mobile) {
+        font-size: 1.5rem;
     }
 }

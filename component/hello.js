@@ -35,6 +35,7 @@ const wind = {
 export default function Hello() {
     return (
         <motion.svg width="50" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+            className='hand'
             initial="initial"
             animate="animate"
             variants={hand}

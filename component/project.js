@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const projects = [
   {
-    link: "https://www.hani.wtf/",
+    link: "https://qualdon.xyz/",
     title: "Qualdon.xyz",
     date: "March 9,2022",
     hero: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, diam sed nisi,",
