@@ -43,7 +43,7 @@
     opacity: .07;
     line-height: 90%;
     @include media-query(mobile) {
-      font-size: 4rem;
+      font-size: 6rem;
       right: 3%;
     }
   }
@@ -58,6 +58,19 @@
     @include media-query(mobile) {
       padding: 8vw;
     }
+    .capabilities {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+    }
+    .js {
+      fill: rebeccapurple;
+    }
+    p span {
+      color: rebeccapurple;
+    }  
   }
 }
 .menuRight{
@@ -88,7 +101,7 @@
     opacity: .07;
     line-height: 90%;
     @include media-query(mobile) {
-      font-size: 4rem;
+      font-size: 5rem;
       right: 1%;
     }
   }

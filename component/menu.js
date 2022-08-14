@@ -1,5 +1,10 @@
 import styles from "../styles/menu.module.scss";
 import { motion, AnimatePresence } from "framer-motion"
+import Js from "../assets/js.svg"
+import React from "../assets/react.svg"
+import Shopify from "../assets/shopify.svg"
+import Webflow from "../assets/webflow.svg"
+import Nextjs from "../assets/nextjs.svg"
 
 const fadeup = {
     initial: { 
@@ -114,9 +119,18 @@ export default function Menu() {
                     <motion.h6 variants={wordfade}> Interactive Front-end Developer</motion.h6>
                 </motion.div>
                 <motion.p variants={paragraph}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, amet ornare placerat tellus, amet lectus leo a quam. Egestas malesuada sagittis mattis quisque facilisis arcu ac.
-                    Malesuada congue in cursus tortor. Egestas venenatis ipsum nunc ut tristique libero sit. Feugiat habitant amet malesuada fusce risus.
+                    i’m <span>hani nekkoub </span>, a 22-year-old Algerian <span>freelance front-end developer</span>.
                 </motion.p>
+                <motion.p variants={paragraph}>
+                    Specializing in refined <span>digital web experiences</span> with a focus on <span>animated</span>, <span>responsive</span>, and <span>interactive content</span>.
+                </motion.p>
+                <motion.div className={styles.capabilities} variants={paragraph}>
+                    <Js className={styles.js}/>
+                    <Nextjs />
+                    <React />
+                    <Shopify />
+                    <Webflow />
+                </motion.div>
             </motion.div>
         </motion.div>
 
@@ -130,10 +144,10 @@ export default function Menu() {
                     <motion.h3 variants={wordfade}>Talk.</motion.h3> 
                 </motion.div>
                 <motion.p variants={paragraph}>
-                    New projects, freelance inquiry,  
+                    New projects new ideas or independent request come say hello
                 </motion.p>
                 <div className={styles.cta}>
-                    Say Hello
+                    Hire me
                 </div>
             </motion.div>
         </motion.div>
