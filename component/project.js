@@ -1,6 +1,5 @@
 import styles from "../styles/project.module.scss";
-import Image from 'next/image'
-import Qualdon from '../assets/qualdon.png'
+import Image from "next/image";
 //aray of projects
 
 const projects = [
@@ -13,7 +12,7 @@ const projects = [
         "nextjs",
         
     ],
-  //  image:  "Qualdon",
+    image: require("./project/qualdon.png")
   },
   {
     title: "Qualdon",
@@ -24,7 +23,7 @@ const projects = [
         "nextjs",
         
     ],
-  //  image:  "Qualdon",
+    image: require("./project/project2.png")
   },
   {
     title: "Qualdon",
@@ -35,7 +34,7 @@ const projects = [
         "nextjs",
         
     ],
-  //  image:  "Qualdon",
+    image: require("./project/project3.png")
   },
 
 
@@ -65,12 +64,16 @@ export default function Project() {
               </ul>
             </div>
           </div>
-          <Image
-              src={Qualdon}
+          <div >
+            <Image
+              src={project.image}
               alt="project picture"
               placeholder="blur"
-              lassName={styles.image}
-          />
+              height={'200vh'}
+              width= {'350vw'}
+              className={styles.image}
+            />
+          </div>
         </div>
       ))}
     </>
