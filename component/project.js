@@ -4,7 +4,8 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Qualdon",
+    link: "https://www.hani.wtf/",
+    title: "Qualdon.xyz",
     date: "March 9,2022",
     hero: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, diam sed nisi,",
     tech: [ 
@@ -15,6 +16,7 @@ const projects = [
     image: require("./project/qualdon.png")
   },
   {
+    link: "/",
     title: "Qualdon",
     date: "March 9,2022",
     hero: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, diam sed nisi,",
@@ -26,6 +28,7 @@ const projects = [
     image: require("./project/project2.png")
   },
   {
+    link: "/",
     title: "Qualdon",
     date: "March 9,2022",
     hero: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, diam sed nisi,",
@@ -44,37 +47,37 @@ export default function Project() {
   return (
     <>
       {projects.map((project, i) => (
-        <div key={i} className={styles.container}>
-          <div className={styles.description}>
-            <h1>{project.title}</h1>
-            <p>{project.date}</p>
-            <p>{project.hero}</p>
-            <div className={styles.tech}>
-              <h5>Tech</h5>
-              <span className={styles.line}></span>
-              <ul>
-              {project.tech.map((tech) => (
-                <li>
-                  <p>
-                    <span>{tech}</span>
-                  </p>
-                </li>
-                ))}
+        <a href={project.link} key={i} className={styles.container}>
+            <div className={styles.description}>
+              <h1>{project.title}</h1>
+              <p>{project.date}</p>
+              <p>{project.hero}</p>
+              <div className={styles.tech}>
+                <h5>Tech</h5>
+                <span className={styles.line}></span>
+                <ul>
+                {project.tech.map((tech) => (
+                  <li>
+                    <p>
+                      <span>{tech}</span>
+                    </p>
+                  </li>
+                  ))}
 
-              </ul>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div >
-            <Image
-              src={project.image}
-              alt="project picture"
-              placeholder="blur"
-              height={'200vh'}
-              width= {'350vw'}
-              className={styles.image}
-            />
-          </div>
-        </div>
+            <div >
+              <Image
+                src={project.image}
+                alt="project picture"
+                placeholder="blur"
+                height={'200vh'}
+                width= {'350vw'}
+                className={styles.image}
+              />
+            </div>
+        </a>
       ))}
     </>
   );

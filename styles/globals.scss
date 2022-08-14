@@ -51,10 +51,23 @@ p {
 h1 {
   font-size: 1.25rem;
   font-weight: 700;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background: gray;
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+  }
   @include media-query(mobile) {
     font-size: 1rem;
   }
 }
+
 h4 {
   font-size: 1.325rem;
 }

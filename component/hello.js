@@ -5,7 +5,7 @@ const hand = {
     initial: { 
         opacity: 1,
     },
-    hover: {
+    animate: {
         rotate: [0, -20, 20],
         transition : {
             duration: 1.25,
@@ -21,7 +21,7 @@ const wind = {
     initial: { 
         opacity: 1,
     },
-    hover: {
+    animate: {
         opacity: [1, 0, 1],
         transition : {
             duration: 1.5,
@@ -36,7 +36,7 @@ export default function Hello() {
     return (
         <motion.svg width="50" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
             initial="initial"
-            whileHover="hover"
+            animate="animate"
             variants={hand}
         >      
             <motion.path d="M5.94614 30.7852C2.94714 37.9742 8.15914 46.6512 15.7301 48.1722C9.83014 44.2102 6.14614 37.8452 5.94614 30.7852" fill="black"

@@ -11,6 +11,9 @@ export default function Home() {
         </Head>
       <Header />
       <Project />
+      <h6>
+        nekkoub@hani.wtf
+      </h6>
     </div>
   )
 }
