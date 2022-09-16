@@ -7,7 +7,7 @@ const projects = [
     link: "https://qualdon.xyz/",
     title: "Qualdon.xyz",
     date: "March 9,2022",
-    hero: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, diam sed nisi,",
+    hero: " A coming soon page for a agency portfolio ",
     tech: [ 
         "scss",
         "nextjs",
@@ -16,30 +16,40 @@ const projects = [
     image: require("./project/qualdon.png")
   },
   {
-    link: "/",
-    title: "Qualdon",
-    date: "March 9,2022",
-    hero: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, diam sed nisi,",
+    link: "https://quick-hani.vercel.app/",
+    title: "Quick",
+    date: "jun 12,2022",
+    hero: " landing page for a creative agence",
     tech: [ 
         "scss",
         "nextjs",
         
     ],
-    image: require("./project/project2.png")
+    image: require("./project/quick.png")
   },
   {
-    link: "/",
-    title: "Qualdon",
-    date: "March 9,2022",
-    hero: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, diam sed nisi,",
+    link: "https://theportfolio-sigma.vercel.app/",
+    title: "Portfolio V2",
+    date: "sep 13,2022",
+    hero: " New version of portfolio 'work-in-progress'",
     tech: [ 
         "scss",
         "nextjs",
+        "tailwind",
         
     ],
-    image: require("./project/project3.png")
+    image: require("./project/v2.png")
   },
-
+  {
+    link: "https://quick-0029d5.webflow.io/",
+    title: "Prime",
+    date: "Coming soon",
+    hero: " inspiration site for the prime hydratation",
+    tech: [ 
+      "Webflow",
+    ],
+    image: require("./project/prime.png")
+  },
 
 ];
 

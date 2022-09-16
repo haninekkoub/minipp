@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+}
+.box {
+    background-color: gray;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.screen {
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

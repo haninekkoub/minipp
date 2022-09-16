@@ -146,9 +146,9 @@ export default function Menu() {
                 <motion.p variants={paragraph}>
                     New projects new ideas or independent request come say hello
                 </motion.p>
-                <div className={styles.cta}>
+                <a className={styles.cta} href="mailto:haninekkoub@gmail.com" >
                     Hire me
-                </div>
+                </a>
             </motion.div>
         </motion.div>
       </AnimatePresence>
