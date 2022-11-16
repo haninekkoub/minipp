@@ -16,10 +16,10 @@ const projects = [
     image: require("./project/qualdon.png")
   },
   {
-    link: "https://quick-hani.vercel.app/",
-    title: "Quick",
+    link: "https://godofwars.netlify.app/",
+    title: "God of wars",
     date: "jun 12,2022",
-    hero: " landing page for a creative agence",
+    hero: " landing page for a game",
     tech: [ 
         "scss",
         "nextjs",
