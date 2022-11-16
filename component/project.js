@@ -29,7 +29,7 @@ const projects = [
   },
   {
     link: "https://theportfolio-sigma.vercel.app/",
-    title: "Portfolio V2",
+    title: "Portfolio V2 ( working in progress)",
     date: "sep 13,2022",
     hero: " New version of portfolio 'work-in-progress'",
     tech: [ 
@@ -41,7 +41,7 @@ const projects = [
     image: require("./project/v2.png")
   },
   {
-    link: "https://quick-0029d5.webflow.io/",
+    link: "",
     title: "Prime",
     date: "Coming soon",
     hero: " inspiration site for the prime hydratation",
