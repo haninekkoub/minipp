@@ -16,33 +16,31 @@ const projects = [
     image: require("./project/qualdon.png")
   },
   {
-    link: "https://godofwars.netlify.app/",
-    title: "God of wars",
-    date: "jun 12,2022",
+    link: "https://mg-motors.vercel.app/",
+    title: "Mg-Motors",
+    date: "October 12,2022",
     hero: " landing page for a game",
     tech: [ 
-        "scss",
-        "nextjs",
+        "Tailwind Css",
+        "Nextjs",
         
     ],
     image: require("./project/quick.png")
   },
   {
-    link: "https://theportfolio-sigma.vercel.app/",
+    link: "",
     title: "Portfolio V2 ( working in progress)",
-    date: "sep 13,2022",
+    date: "dec 13,2022",
     hero: " New version of portfolio 'work-in-progress'",
     tech: [ 
         "scss",
         "nextjs",
-        "tailwind",
-        
     ],
     image: require("./project/v2.png")
   },
   {
     link: "",
-    title: "Prime",
+    title: "Prime ( working in progress)",
     date: "Coming soon",
     hero: " inspiration site for the prime hydratation",
     tech: [ 
