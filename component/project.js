@@ -29,7 +29,7 @@ const projects = [
   },
   {
     link: "",
-    title: "Portfolio V2 ( working in progress)",
+    title: "Portfolio V2 ( wip)",
     date: "dec 13,2022",
     hero: " New version of portfolio 'work-in-progress'",
     tech: [ 
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     link: "",
-    title: "Prime ( working in progress)",
+    title: "Prime ( wip)",
     date: "Coming soon",
     hero: " inspiration site for the prime hydratation",
     tech: [ 
